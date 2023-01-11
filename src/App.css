@@ -1,0 +1,498 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/*-----------------------------------------------------frontend-----------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --------------------------------------------------header-------------------------------------------------- */
+.header {
+  background-color: #FCFBFC;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.068);
+}
+
+.header-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px 24px;
+  gap: 8px;
+  background: #2A85FF;
+  border-radius: 8px;
+  color: #fff;
+  /* margin-left: 50px; */
+  transition: all 0.5s linear;
+}
+
+.header-btn:hover {
+  background-color: #fff;
+  color: #2A85FF;
+  border: 1px solid #2A85FF;
+}
+
+/* DOWNLOAD */
+
+.dropdown1 i,
+span {
+  transition: all 0.5s linear;
+}
+
+.dropdown1:hover span {
+  display: inline-block;
+}
+
+.dropdown1:hover .mobile-icon {
+  display: none;
+}
+
+.navbar-nav .nav-item {
+  padding: 20px;
+
+}
+
+.navbar-brand img {
+  width: 150px;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #1a1d1f96;
+  font-weight: 600;
+  transition: all 0.3s linear;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #1A1D1F;
+}
+
+.mega {
+  position: relative;
+}
+
+.mega-menu {
+  box-shadow: 0px 10px 32px rgba(0, 0, 0, 0.02);
+  background-color: #fff;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  position: absolute;
+  top: 95%;
+  left: 0;
+  padding: 15px 45px 15px 10px;
+  display: none;
+  line-height: 30px;
+  width: 700px;
+}
+
+.mega:hover .mega-menu {
+  display: flex;
+}
+
+.mega-menu ul li {
+  list-style: none;
+  padding: 8px;
+  margin: 5px 15px;
+  text-align: start;
+  font-size: 18px;
+}
+
+.mega-menu ul li a {
+  color: #1a1d1f96;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+
+.mega-menu ul li a:hover {
+  color: #1A1D1F;
+}
+
+.mega-menu ul li a h5 i {
+  font-size: 15px;
+  background: #B7D8FF;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.mega-submenu {
+  background: #2a86ff0f;
+  position: absolute;
+  margin: 10px 10px 10px 0;
+  padding: 50px 45px 70px 30px;
+  border-radius: 10px;
+  line-height: 30px;
+  top: 60px;
+  left: 60%;
+}
+
+.mega-submenu-heading {
+  position: relative;
+}
+
+.mega-submenu-heading:hover .mega-submenu {
+  display: block;
+}
+
+.dropdown1 {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-qr span {
+  margin-left: 14px;
+  margin-right: 5px;
+}
+
+.dropdown-qr {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-qrcode-img {
+  margin-top: 25px;
+  position: absolute;
+  top: 80%;
+  display: none;
+  width: 150px;
+  transition: all 0.5s linear;
+}
+
+.dropdown-qr:hover .dropdown-qrcode-img {
+  display: block;
+}
+
+.dropdown-menu1 {
+  box-shadow: 0px 10px 32px rgba(0, 0, 0, 0.02);
+  background-color: #fff;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  position: absolute;
+  top: 95%;
+  left: -24px;
+  display: none;
+  line-height: 30px;
+  width: 200px;
+}
+
+.dropdown1:hover .dropdown-menu1 {
+  display: flex;
+}
+
+.dropdown-menu1 ul li {
+  list-style: none;
+  padding: 5px;
+  margin: 8px 15px;
+  text-align: start;
+}
+
+.dropdown-menu1 ul li a {
+  color: #1a1d1f96;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+
+.dropdown-menu1 ul li a:hover {
+  color: #1A1D1F;
+}
+
+/* banner */
+.mainheading {
+  margin-top: 90px;
+  font-size: 64px;
+  line-height: 74px;
+}
+
+.mainheading-content {
+  font-family: 'Gilroy-Medium';
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #767779;
+}
+
+.extraservice {
+  line-height: 25px;
+}
+
+.download-plateform {
+  margin-top: 36px;
+}
+
+/* keyfeature-card */
+.keyfeature-card {
+  display: flex;
+  justify-content: center;
+  margin-top: 52px;
+}
+
+/* banking */
+.scallopbanking {
+  text-align: start;
+}
+
+.scallopbanking h2 {
+  font-family: 'Gilroy-Bold';
+  font-size: 38px;
+  line-height: 45px;
+  color: #000;
+}
+
+.scallopbanking p {
+  font-family: 'Gilroy-Medium';
+  margin-top: 15px;
+  font-size: 20px;
+  line-height: 32px;
+  color: #8F92A1;
+}
+
+.ScallopUSPList {
+  text-align: start;
+  -webkit-box-pack: center;
+  place-content: center;
+}
+
+.ScallopUSPList h2 {
+  line-height: 45px;
+  font-size: 38px;
+  margin-top: 15px;
+}
+
+.ScallopUSPList p {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 23px;
+  padding-bottom: 10px;
+  color: #8F92A1;
+}
+
+.scallopUSPList-card {
+  width: 310px;
+  text-align: start;
+}
+
+.ScallopSectionDetail {
+  text-align: start;
+  max-width: 60rem;
+}
+
+.ScallopChain-CardSection {
+  text-align: start;
+}
+
+.ScallopChain-CardSection h2 {
+  line-height: 45px;
+  font-size: 38px;
+  margin-top: 15px;
+}
+
+.ScallopChain-CardSection p {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 23px;
+  margin: 10px 0;
+  color: #8F92A1;
+  padding-bottom: 75px 0;
+}
+
+.scallopmarquee {
+  padding: 0;
+}
+
+.ScallopFutureBanking {
+  text-align: start;
+}
+
+.ScallopFutureBanking h2 {
+  line-height: 45px;
+  font-size: 38px;
+  margin-top: 15px;
+}
+
+.ScallopFutureBanking p {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 23px;
+  color: #8F92A1;
+  padding-bottom: 25px;
+}
+
+.featured h2 {
+  line-height: 45px;
+  font-size: 38px;
+  padding-bottom: 20px;
+}
+
+.featured p {
+  font-size: 20px;
+  line-height: 23px;
+  padding-bottom: 18px;
+}
+.tab-box-extra {
+text-align: start
+}
+.Featuredtab img{
+  margin: 15px;
+}
+.card-list {
+  text-align: start;
+  font-size: 16px;
+  border: 0;
+  line-height: 40px;
+}
+
+.card-heading {
+  text-align: start;
+}
+
+.cardicon img {
+  height: 45px;
+  width: 45px;
+  margin: 0px 0px 25px 15px;
+  left: 1rem;
+}
+
+.card-title h2 {
+  font-size: 38px;
+  line-height: 100px;
+  text-align: start;
+}
+
+.card-title p {
+  font-size: 20px;
+  line-height: 23px;
+  text-align: start;
+}
+.supercharge{
+  font-size: 38px;
+}
+.footer-content {
+  text-align: start;
+}
+
+/* media Quary */
+@media (max-width:1399px) {
+  .ScallopFutureBanking {
+    text-align: center;
+  }
+  .box-margin{
+    margin: 5px;
+  }
+  .tab-box-extra {
+    margin: 5px;
+    padding: 15px;
+    text-align: start;
+}
+}
+@media (max-width:991px) {
+  .scallopbanking {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ScallopUSPList {
+    text-align: center;
+    -webkit-box-pack: center;
+    place-content: center;
+  }
+
+  .scallopUSPList-card {
+    width: 100%;
+    text-align: center;
+  }
+
+  .ScallopChain-CardSection {
+    text-align-last: center;
+  }
+
+  .ScallopChain-CardSection p {
+    margin-top: -15px;
+    margin-bottom: 40px;
+  }
+
+  .basic-card {
+    margin: 0 85px;
+  }
+
+  .basic-card-content {
+    align-items: flex-start;
+    text-align-last: start;
+  }
+  .basic-card-content button{
+    text-align-last: center;
+  }
+  .ScallopChain-CardSection p {
+    margin-top: 12px;
+    font-weight: 900;
+    margin-bottom: 6px;
+  }
+  .ScallopFutureBanking {
+    text-align: center;
+  }
+
+}
+
+@media (max-width:767px) {}
+
+@media (max-width:575px) {
+  .button-toggle {
+    display: none;
+  }
+  .supercharge{
+    font-size: 25px;
+  }
+}
